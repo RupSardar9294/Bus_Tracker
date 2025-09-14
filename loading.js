@@ -1,5 +1,6 @@
 setTimeout(function(){
-      window.location.href = "index.html"; // change to your homepage
+      window.location.href = "main.html"; // change to your homepage
     }, 3000);
+
 
     
