@@ -116,7 +116,7 @@ body::before {
 }
 
 .bus::after {
-      content: "---";
+      content: "--";
       position: absolute;
       bottom: -10px;
       right: 20px;
@@ -141,4 +141,5 @@ body::before {
       font-size: 1.2rem;
       letter-spacing: 1px;
 }
+
 
