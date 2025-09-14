@@ -1,0 +1,144 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      /**background: linear-gradient(135deg, #6a11cb, #2575fc);**/
+      background-image: url("BG2.jpeg");
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+      font-family: Arial, sans-serif;
+      color: white;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(8px) brightness(0.6); /* Blur + darken */
+    z-index: -1; /* Keep it behind content */
+}
+
+.loader-container {
+      text-align: center;
+      position: relative;
+}
+
+.logo {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+}
+
+.road {
+      position: relative;
+      width: 300px;
+      height: 80px;
+      background: #333;
+      border-radius: 20px;
+      margin: 0 auto;
+      overflow: hidden;
+}
+
+.bus {
+      position: absolute;
+      top: 10px;
+      left: 120px;
+      width: 130px;
+      height: 60px;
+      background: #ffcc00;
+      border-radius: 10px;
+      animation: moveBus 2s linear infinite;
+}
+.window {
+      position: absolute;
+      top: 10px;
+      width: 25px;
+      height: 20px;
+      background: #5dade2;
+      border-radius: 3px;
+}
+.window:nth-child(1) { left: 10px; }
+.window:nth-child(2) { left: 40px; }
+.window:nth-child(3) { left: 70px; }
+.window:nth-child(4) { left: 100px; }
+.door {
+      position: absolute;
+      bottom: 0;
+      left: 90px;
+      width: 25px;
+      height: 45px;
+      background: #2980b9;
+      border-radius: 3px;
+}
+.headlight {
+      position: absolute;
+      top: 35px;
+      right: -5px;
+      width: 10px;
+      height: 15px;
+      background: #fff176 ;
+      border-radius: 3px;
+      box-shadow: 0 0 10px #fff176;
+}
+.bus #bus_name{
+    text-align: center;
+        position: absolute;
+        width: 100%;
+        color: #084db4;
+        top: 30px;
+        border-top: 2px solid brown;
+        border-bottom: 2px solid brown;;
+        font-size: 0.7rem;
+}
+
+.bus::before {
+      content: "---";
+      position: absolute;
+      bottom: -10px;
+      left: 20px;
+      width: 20px;
+      height: 20px;
+      background: #000;
+      border-radius: 50%;
+      animation: rwheels 0.2s linear infinite;
+}
+
+.bus::after {
+      content: "---";
+      position: absolute;
+      bottom: -10px;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      background: #000;
+      border-radius: 50%;
+      animation: rwheels 0.2s linear infinite;
+}
+
+@keyframes moveBus {
+      0% { left: -120px; }
+      100% { left: 320px; }
+}
+@keyframes rwheels{
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(360deg);}
+}
+
+.loading-text {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+}
+
