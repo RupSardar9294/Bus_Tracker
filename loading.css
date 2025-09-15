@@ -10,7 +10,7 @@ body {
       justify-content: center;
       height: 100vh;
       /**background: linear-gradient(135deg, #6a11cb, #2575fc);**/
-      background-image: url("BG2.jpeg");
+      background-image: url("background.jpeg");
       background-size: cover;
       background-attachment: fixed;
       position: relative;
@@ -141,5 +141,6 @@ body::before {
       font-size: 1.2rem;
       letter-spacing: 1px;
 }
+
 
 
