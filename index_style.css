@@ -8,7 +8,7 @@ body{
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
      /**background-image: url("background.png");
     background-size: cover;**/
-    background-image: url("BG2.jpeg");
+    background-image: url("background.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -250,4 +250,5 @@ body::before {
     margin: 20px 0;
     border: 1px solid #ffeaa7;
     text-align: center;
+
 }
